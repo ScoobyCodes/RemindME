@@ -40,7 +40,7 @@
 >Always do a fresh install of node_modules, whenever downloaded from github
 >These are affected by different OS environment.
 >As package.json is already in project, so all you need to run is:
-> "npm install"
+> "npm install" or simply "npm i"
     
 <br>
 ****HOPE THIS HELPS, FEEL FREE TO PING ME on my E-mail,<br>
