@@ -2,17 +2,9 @@
 
   >This app reminds you about various activities which one might find difficult to remember through email notifications.
   ><br>VERSION: 1.0.0<br>
- +<br><h3>Team Members :</h3><br>
- +Lohitaksh Trehan -  https://github.com/LohitakshTrehan <br>
- +Sagar -  https://github.com/Sagarcodes <br>
- +Sourabh Gupta -  https://github.com/scoobywwe
  
- Feel free to contribute by improving UI<br>
- for example a date picker, more in flow type ui etc...<br>
- 
- <h5>***********************************************************</h5>
  <h2>HOW TO RUN</h2>
- >So, to boil down you will need to add a new .env file to your local file-system
+ >So, To boil down you will need to add a new .env file to your local file-system
  ><br>The .env file should have :
  >>DB_HOST= "localhost"<br>
    DB_USER= " the name of the user having admin privalege to database "<br>
@@ -43,8 +35,7 @@
 > "npm install"
     
 <br>
-****HOPE THIS HELPS, FEEL FREE TO PING ME on my E-mail,<br>
-****IF YOU STILL FACE SOME ISSUE****************
+
  
  
    
