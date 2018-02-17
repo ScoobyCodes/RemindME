@@ -89,7 +89,7 @@ $(function () {
     });
 
     $('#github').click(function () {
-        window.location.href="https://github.com/NodeNITKkr/PingME";
+        window.location.href="https://github.com/ScoobyCodes/RemindME";
     })
 
 });

@@ -18,7 +18,6 @@ header, main, footer {
     }
 }
 
-/* label focus color */
 .taskAdd input[type=text] {
     color: #fff !important;
 }
@@ -29,16 +28,13 @@ header, main, footer {
 .taskAdd input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
     color: #fff !important;
 }
-/* label underline focus color */
+
 .taskAdd input[type=text]:focus {
     border-bottom: 1px solid #fff !important;
     box-shadow: 0 1px 0 0 #fff !important;
 }
 
-/*Sourabh*/
 
 .contentHomePage{
     width: 100%;
 }
-
-/*Sourabh*/

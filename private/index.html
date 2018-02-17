@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"  >
     <title>RemindME</title>
-    <link rel="icon" href="logo.png">
-    <link href="font-awesome-4.7.0/css/font-awesome.css" media="all" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <link href="Resources/font-awesome-4.7.0/css/font-awesome.css" media="all" rel="stylesheet">
     <link rel="stylesheet" href="CSS/materialize.css">
     <link rel="stylesheet" href="CSS/content.css">
-    <script src="JS/jquery.js"></script>
-    <script src="JS/moment.js"></script>
-    <script src="JS/timezone.js"></script>
-    <script src="JS/materialize.js"></script>
+    <script src="Resources/JS/jquery.js"></script>
+    <script src="Resources/JS/moment.js"></script>
+    <script src="Resources/JS/timezone.js"></script>
+    <script src="Resources/JS/materialize.js"></script>
     <script src="JS/content.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/postDatabase.js"></script>
+    <script src="JS/getDatabase.js"></script>
+    <script src="JS/designConfig.js"></script>
+    <script src="JS/googleChart.js"></script>
+    <script src="JS/elementDOMconfig.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <style>
         body{
-            background: url(bgimg2.jpeg) fixed center no-repeat;
+            background: url(images/bgimg2.jpeg) fixed center no-repeat;
             background-size: cover;
         }
     </style>
@@ -47,7 +53,7 @@
 <ul id="slide-out" class="side-nav">
     <li><div class="user-view">
         <div class="background">
-            <img src="bgsidenav.jpg">
+            <img src="images/bgsidenav.jpg">
         </div>
         <a href="#!user"><i class="fa fa-user-circle-o fa-4x"></i></a>
         <a href="#!name"><span class="white-text name usernameSideNav"></span></a>
@@ -69,7 +75,7 @@
 <nav  class="hide-on-large-only" style="background-color:#668964">
     <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="left button3-collapse hide-on-large-only"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
-        <a href="#" class="center brand-logo"><img class="responsive-img homeImg" style="cursor:pointer;"src="logo.png" height = "60px" width="60px"></a>
+        <a href="#" class="center brand-logo"><img class="responsive-img homeImg" style="cursor:pointer;" src="images/logo.png" height = "60px" width="60px"></a>
         <a href="/logout" class="right hide-on-large-only"><i class="fa fa-sign-out fa-3x" aria-hidden="true"></i></a>
     </div>
 </nav>
@@ -84,7 +90,7 @@
 <nav class="hide-on-med-and-down" style="background-color:#668964; height : 45px ">
     <div class="nav-wrapper" style="line-height: 45px;">
         <a href="#" data-activates="slide-out" class="left button3-collapse hide-on-med-and-down"><i class="fa fa-bars fa-2x" style="line-height: 45px; height: 45px"aria-hidden="true"></i></a>
-        <img class="center brand-logo responsive-img homeImg" style="cursor: pointer"src="logo.png" height="45" width="45">
+        <img class="center brand-logo responsive-img homeImg" style="cursor: pointer" src="images/logo.png" height="45" width="45">
         <ul class="right hide-on-med-and-down">
             <li><a href="/logout"><i class="fa fa-2x fa-sign-out" style="line-height: 45px; height: 45px"></i> </a></li>
         </ul>
@@ -131,9 +137,8 @@
         </ul>
     </div>
 </div>
-<!-- CONTENT TO BE DISPLAYED ON HOME PAGE LIKE STATS OF USERLOGGED IN-->
+<!-- CONTENT TO BE DISPLAYED ON HOME PAGE LIKE STATS OF USER LOGGED IN-->
 
-<!--------------------------------------------------------------------------LOHITAKSH------------------------------------------------->
 <style>
     .google-visualization-table-td {
         text-align: center !important;
@@ -186,8 +191,6 @@
         </div>
     </div>
 </div>
-<!--LOHITAKSH-->
-
 
 
 </body>

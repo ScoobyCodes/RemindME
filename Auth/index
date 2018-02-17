@@ -1,0 +1,28 @@
+const express = require('express');
+const Router = express.Router();
+const path = require('path');
+
+
+Router.use('/private',checkLoggedIn,express.static(path.join(__dirname,"../private")));
+
+Router.get('/',function(req,res,next){
+    if(req.user){
+        res.redirect('/private')
+    }
+    else{
+        next();
+    }
+});
+
+
+function checkLoggedIn(req,res,next) {
+    console.log('check logged in');
+    if(req.user){
+        next();
+    }
+    else{
+        res.status(404).send('unauthorised');
+    }
+}
+
+module.exports = Router;
