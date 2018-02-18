@@ -17,6 +17,11 @@ function validateFields(a,b,c) {
     };
 }
 
+function list(name,id) {
+    this.name = name;
+    this.id = id;
+}
+
 function validateTimeandDate(date,time) {
     if(date.length != 8) {
         alert("Date is not in Valid Form")

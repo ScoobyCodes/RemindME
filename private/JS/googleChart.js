@@ -15,8 +15,8 @@ function drawChart1() {
     data.addColumn('string', 'Task Type');
     data.addColumn('number', 'Count');
     data.addRows([
-        ['Pending Tasks', pending_tasks],
-        ['Completed Tasks', done_tasks]
+        ['Pending Tasks', pendingTasks],
+        ['Completed Tasks', doneTasks]
     ]);
 
     var options = {'title':'YOUR TASK STATISTICS',
@@ -48,8 +48,8 @@ function drawChart2() {
     data.addColumn('string', 'Task Type');
     data.addColumn('number', 'Count');
     data.addRows([
-        ['Pending Tasks', pending_tasks],
-        ['Completed Tasks', done_tasks]
+        ['Pending Tasks', pendingTasks],
+        ['Completed Tasks', doneTasks]
     ]);
 
     var options = {'title':'YOUR TASK STATISTICS',

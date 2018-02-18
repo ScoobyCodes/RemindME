@@ -16,17 +16,16 @@ function retrieveData() {
     })
 
     $.get('/getdatabase/retrievePieChart',function (data) {
-        console.log(data);
         if(data != null) {
-            done_tasks=data.TaskDoneCounter;
-            pending_tasks=data.TaskNotDoneCounter;
+            doneTasks=data.TaskDoneCounter;
+            pendingTasks=data.TaskNotDoneCounter;
             refreshSystem()
         }
     })
 
     $.get('/getdatabase/numOfUsers',function (data) {
         if(data!=null && data>=0) {
-            num_of_users=parseInt(data);
+            numOfUsers=parseInt(data);
             refreshSystem()
         }
     })

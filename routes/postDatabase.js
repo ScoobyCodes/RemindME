@@ -150,8 +150,8 @@ Router.post('/updatePieChart',function (req,res) {
         }
     }).then(function(data){
         data.update({
-            TaskDoneCounter: req.body.done_tasks,
-            TaskNotDoneCounter: req.body.pending_tasks
+            TaskDoneCounter: req.body.doneTasks,
+            TaskNotDoneCounter: req.body.pendingTasks
         }).then(function(){
             res.send({success: true});
         })
@@ -197,28 +197,14 @@ function updateDatabases(req,res,listId) {
         listName = JSON.parse(data.userListName);
         taskCounter = JSON.parse(data.userListTaskCounter);
 
-        let flag = false;
-        let listSequenceId
-        for (let i = 0; i < counterList; i++) {
-            if (listName[i].id == listId) {
-                listSequenceId = i;
-                flag = true;
-                break;
-            }
-        }
+        let listArrayIds = listName.map(x => x.id);
+        let listSequenceId = listArrayIds.indexOf(listId);
 
-        if (flag) {
-            flag = false;
-            let taskSequenceId = 0;
-            for (let i = 0; i < taskCounter[listSequenceId]; i++) {
-                if (listTasks[listSequenceId][i].id == req.body.id) {
-                    taskSequenceId = i;
-                    flag = true;
-                    break;
-                }
-            }
+        if (listSequenceId != -1) {
+            let taskArrayIds = listTasks[listSequenceId].map(x => x.id);
+            let taskSequenceId = taskArrayIds.indexOf(req.body.id);
 
-            if (flag) {
+            if (taskSequenceId != -1) {
                 listTasks[listSequenceId].splice(taskSequenceId, 1);
                 taskCounter[listSequenceId]--;
                 listTasks = JSON.stringify(listTasks);

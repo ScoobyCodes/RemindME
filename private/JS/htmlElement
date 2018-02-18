@@ -1,0 +1,19 @@
+
+function createListElement(i) {
+    const listElement = ` <li id= "list${parseInt(i) + 1}"><a id = "listDelete${parseInt(i) + 1}" style="float: right; cursor: pointer">
+                           <i class="fa fa-times"></i></a><a href="#!"><i class="fa fa-list"  aria-hidden="true"></i>
+                            ${listName[i].name}</a></li>`;
+
+    return listElement;
+
+}
+
+function createTaskElement(a,j) {
+    const taskElement = `<li id="list${parseInt(a - 1) + 1}Task${parseInt(j) + 1}">
+                           <div class="collapsible-header" style="background-color: #a1887f"><img class="brand-logo responsive-img" src="images/logo2.png" height="30" width="30">&nbsp; &nbsp; ${listTasks[a - 1][j].task}
+                           <div style="position: absolute; right: 10px; cursor: pointer" id="deleteList${parseInt(a - 1) + 1}Task${parseInt(j) + 1}"><i class="fa fa-times"></i></div></div>
+                           <div class="collapsible-body" style="background-color: white"><span><b>Date</b> : ${listTasks[a - 1][j].date}</span><span style="float: right"><b>Time:</b> ${listTasks[a - 1][j].time}</span></div>
+                          </li> `;
+
+    return taskElement;
+}

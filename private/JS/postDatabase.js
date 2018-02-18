@@ -27,7 +27,7 @@ function updateTask(a,b){
 }
 
 function update_piechart(a,b){
-    $.post('/postdatabase/updatePieChart',{ done_tasks: a,pending_tasks : b},function(data){
+    $.post('/postdatabase/updatePieChart',{ doneTasks: a,pendingTasks : b},function(data){
         if(data.success == true) {
             drawChart1();
             drawChart2();
@@ -59,7 +59,7 @@ function linkTimeTask(a) {
     }
 }
 
-function deleteLinkTimeTask(a){
+function deleteLinkTimeTask(a) {
     $.post('/postdatabase/deleteTimeOut', {id: a.id}, function (data) {
         if (data.success != true) {
             console.log("error");
