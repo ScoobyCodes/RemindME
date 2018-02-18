@@ -1,12 +1,12 @@
 # RemindME
 
   >This app reminds you about various activities which one might find difficult to remember through email notifications.
-  ><br>VERSION: 1.0.0<br>
+  ><br>VERSION: 1.0.1<br>
  
  <h2>HOW TO RUN</h2>
- >So, To boil down you will need to add a new .env file to your local file-system
- ><br>The .env file should have :
- >>DB_HOST= "localhost"<br>
+ So, To boil down you will need to add a new .env file to your local file-system
+ <br>The .env file should have :
+   DB_HOST= "localhost"<br>
    DB_USER= " the name of the user having admin privalege to database "<br>
    DB_PASS= " password of your mysql database "<br>
    DB_DATABASE= "name of the database you want to give"<br>
@@ -26,13 +26,6 @@
     send mails to the clients. So, as same reason above, we<br>
     are hiding its new password. You can create your own<br>
     new gmail account as per your need.
-    
-    
->Also one important thing: delete the node_modules package if downloaded
->Always do a fresh install of node_modules, whenever downloaded from github
->These are affected by different OS environment.
->As package.json is already in project, so all you need to run is:
-> "npm install"
     
 <br>
 
